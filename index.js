@@ -1,4 +1,3 @@
-
 function changImage(){
     let displayImage = document.getElementById('image1')
     if(displayImage.src.match('images/rest1.png')){

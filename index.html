@@ -3,22 +3,34 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Merriweather:ital@0;1&family=Roboto:wght@300;400;500;700;900&family=Ubuntu:wght@300&family=Work+Sans:wght@400;500;800&display=swap"
+        rel="stylesheet">
+
+    <!-- bootstrap & css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+    <!-- font awesom -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- style -->
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+    <!-- navbar -->
     <nav>
-        <h2>Shivani Kakade</h2>
+        <img src="images/logo1.jpg">
         <ul>
             <li><a href="#about-me">About Me</a></li>
             <li><a href="#projects">Projects</a></li>
@@ -27,17 +39,47 @@
         </ul>
     </nav>
 
+    <!-- header -->
+    <div class="container-fluid bg-primary d-flex align-items-center mb-5 py-5" id="home" style="min-height: 100vh;">
+        <div class="container">
+            <div class="row align-item-center">
+                <div class="col-lg-7 hero-text text-center text-lg-left">
+                    <h3 class="text-white font-weight-normal mb-3">Hello, I'm</h3>
+                    <h1 class="display-3 text-uppercase text-primary mb-" style="-webkit-text-stroke: 4px #ffffff;">
+                        Shivani Kakade</h1>
+                    <!-- display-1 :text will be more big, display-3:text will be small  -->
+                    <h1 class=" d-inline font-weight-lighter text-white">Juninior Full Stack Java Developer</h1>
+
+                    <!-- button -->
+                    <div class="d-flex align-items-center justify-content-center justify-content-lg-start pt-5">
+                        <a href="images/Shivani_Resume (1).pdf" download class="btn btn-white mr-4">Download CV</a>
+                        <a href="#about-me" class="btn btn-blue d-done d-sm-block">About Me</a>
+                    </div>
+
+                </div>
+                <!-- image -->
+                <div class="about-img col-lg-6 px-8 pl-lg-0 pb-5 pb-lg-4">
+                    <img src="images/sh.jpeg" alt="" class="img-fluid w-90 rounded-circle shadow-sm mt-4">
+                </div>
+
+            </div>
+        </div>
+    </div>
+
     <main>
         <section id="about-me">
-            <h2>About Me</h2>
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">About</h1>
+                <h1 class="position-absolute text-uppercase text-primary">About Me</h1>
+            </div>
+            <!-- <h2>About Me</h2> -->
             <div class="about-container">
+                <div class="img"><img src="images/sk2.jpeg"></div>
                 <div class="about-text-container">
-                    <h4>Hello, I'm Shivani</h4>
-                    <h3>Junior Full Stack Java Developer</h3>
                     <p>
                         I am from Maharashtra. I have completed my graduation in computer science Engineering from
                         Ballarpur Institute Of Technology, Ballarshah. I have knowledge of HTML, CSS, Bootstrap, Python.
-                        Along with my degree I have completed 3 Months Iternship as a Front-End Developer at Magical
+                        Along with my degree I have completed 3 Months Internship as a Front-End Developer at Magical
                         Umbrella pvt Ltd, Chandrapur and also completed python Course.
                         Now, Currently I am doing Juninor Full Stack java Developer (JFSJD) course in Generation India
                         and vinsys where I learn various technology like html, css, bootstrap, javascript, git and
@@ -46,68 +88,94 @@
                         Time Management.
                     </p>
                     <p>Thank You!</p>
-                  
+
                 </div>
-                <div class="img"><img src="images/aboutme.jpeg"></div>
+                <!-- <div class="img"><img src="images/sk1.jpeg"></div> -->
             </div>
         </section>
 
         <section id="projects">
-            <h2>Projects</h2>
-            <div class="container">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Projects</h1>
+                <h1 class="position-absolute text-uppercase text-primary">My Projects</h1>
+            </div>
+            <!-- <h2>Projects</h2> -->
+            <div class="container-fluid" style="width: 90%;">
                 <div class="row">
-                    <div class="card" style=" width: 50%;">
+                    <div class="col-6">
                         <h3>The Restaurant Website</h3>
-                        <img id="image1" width="100%" height="100%" src="images/rest1.png" onclick="changImage()"/>
-                       <a href="https://shivanikakde15.github.io/Restaurant_Project/" target="_blank"><button>Click Here</button></a>
+                        <img id="image1" width="100%" height="100%" src="images/rest1.png" onclick="changImage()" />
+                        <a href="https://shivanikakde15.github.io/Restaurant_Project/" target="_blank"><button>Click
+                                Here</button></a>
                     </div>
-                    <div class="card" style=" width: 50%;">
+                    <div class="col-6">
                         <h3>Colmar Project</h3>
-                        <img id="image2" width="100%" height="100%" src="images/colmar1.png" onclick="changColmar()"/>
-                        <a href="https://shivanikakde15.github.io/Colmar_Offline_Project/" target="_blank"><button>Click Here</button></a>
+                        <img id="image2" width="100%" height="100%" src="images/colmar1.png" onclick="changColmar()" />
+                        <a href="https://shivanikakde15.github.io/Colmar_Offline_Project/" target="_blank"
+                            class="click_btn"><button>Click Here</button></a>
                     </div>
                 </div>
 
-                <div class="row">
-                    <div class="card" style=" width: 50%;">
+                <div class="row mt-5">
+                    <div class="col-6">
                         <h3>Tea Cozy Project</h3>
-                        <img id="image3" width="100%" height="100%" src="images/teacozy1.png" onclick="TeaCozy()"/>
-                        <a href="https://shivanikakde15.github.io/Tea_Cozy_Project/" target="_blank"><button>Click Here</button></a>
+                        <img id="image3" width="100%" height="100%" src="images/teacozy1.png" onclick="TeaCozy()" />
+                        <a href="https://shivanikakde15.github.io/Tea_Cozy_Project/" target="_blank"><button>Click
+                                Here</button></a>
                     </div>
-                    <div class="card" style=" width: 50%;">
+                    <div class="col-6">
                         <h3>Dasmoto's Project</h3>
-                        <img id="image4" width="100%" height="100%" src="images/das1.png" onclick="changDasmotos()"/>
-                        <a href="https://shivanikakde15.github.io/Dasmoto-s-project/" target="_blank"><button>Click Here</button></a>
+                        <img id="image4" width="100%" height="100%" src="images/das1.png" onclick="changDasmotos()" />
+                        <a href="https://shivanikakde15.github.io/Dasmoto-s-project/" target="_blank"><button>Click
+                                Here</button></a>
                     </div>
                 </div>
-          
+
             </div>
 
         </section>
 
         <section id="skills">
-            <h2>Skills</h2>
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Skills</h1>
+                <h1 class="position-absolute text-uppercase text-primary">My Skills</h1>
+            </div>
+            <!-- <h2>Skills</h2> -->
             <div class="skills-container">
-                <i class="fab fa-html5"></i>
-                <i class="fab fa-css3-alt"></i>
-                <i class="fab fa-js"></i>
-                <i class="fab fa-figma"></i>
-                <i class="fab fa-git"></i>
-                <i class="fab fa-node"></i>
-                <i class="fab fa-github"></i>
+              <img src="images/HTML5_logo.png">
+              <img src="images/css.png">
+              <img src="images/bootstrap.jpg">
+              <img src="images/javascript.jpg">
+              <img src="images/node.jpg">
+              <img src="images/python.jpg">
+              <img src="images/git-bash-logo.png">
+              <img src="images/github.png">
             </div>
         </section>
 
         <section id="contact">
-            <h2>Contact</h2>
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Contact</h1>
+                <h1 class="position-absolute text-uppercase text-primary">Contact Me</h1>
+            </div>
+            <!-- <h2>Contact</h2> -->
             <div class="contact-container">
-                <a href="https://github.com/ShivaniKakde15/" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="https://www.linkedin.com/feed/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/ShivaniKakde15/" target="_blank"><img src="images/github.png"></a>
+                <a href="https://www.linkedin.com/feed/" target="_blank"><img src="images/linkedin.png"></a>
             </div>
         </section>
     </main>
 
-    <footer>Made with <span class="heart">♥</span> Shivani 2023</footer>    
+
+    <!-- footrer -->
+    <footer>Made with <span class="heart">♥</span> Shivani 2023</footer>
+
+
+
+    <!-- javascript
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+        integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+        crossorigin="anonymous"></script> -->
     <script src="index.js"></script>
 </body>
 

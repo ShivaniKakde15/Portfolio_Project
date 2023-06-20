@@ -33,3 +33,4 @@ function changDasmotos(){
         displayImage.src = 'images/das1.png'
     }
 }
+
